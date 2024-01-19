@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Speel-O-Theek Nijkerk</title>
+</head>
+<body>
+    <header><div class="header-content">
+        <h1>Welkom bij Speel-O-Theek Nijkerk</h1>
+        <img id="headerlogo" src="SpeelOtheekkleur.jpg" alt="Logo">
+    </div></header>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="performLogin()">Login</button>
+        </form>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <h2>Welcome!</h2>
+        <p>You are logged in.</p>
+        <button onclick="performLogout()">Logout</button>
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+</html>

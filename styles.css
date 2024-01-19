@@ -1,0 +1,141 @@
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffac54;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.login-container,
+.content-container {
+    background-color: #ff9341;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Initially hide both containers */
+}
+
+.header-content {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#headerlogo {
+    max-height: 100px;
+}
+
+#topLeftButton,
+#topRightButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#topLeftButton {
+    margin-left: 10px;
+}
+
+#topRightButton {
+    margin-right: 10px;
+}
+
+.section-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#home-content {
+    background-color: #f0f0f0;
+}
+
+#about-content {
+    background-color: #e0e0e0;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between; /* Center header items horizontally */
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin-right: 10px;
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}

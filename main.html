@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Speel-O-Theek Nijkerk</title>
+</head>
+<body>
+    <header>
+        <button id="topLeftButton" onclick="showContent('member-admin')">Inloggen</button>
+        <div class="header-content">
+            <h1>Welkom bij Speel-O-Theek Nijkerk</h1>
+            <img id="headerlogo" src="SpeelOtheekkleur.jpg" alt="Logo">
+        </div>
+        <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+            <button id="topRightButton">Welcome, <span id="usernamePlaceholder"></span></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" id="settingsLink">Settings</a>
+                <a href="#" id="logoutLink" onclick="performLogout()">Logout</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="section-container">
+        <div class="button-container" id="initial-content">
+            <!-- Initial content with three buttons -->
+            <button onclick="showContent('innemen')">Innemen</button>
+            <button onclick="showContent('controleren')">Controleren</button>
+            <button onclick="showContent('uitlenen')">Uitlenen</button>
+        </div>
+
+        <!-- Member Administration content -->
+        <div class="button-container" id="member-admin-content">
+            <p>This is the Member Administration content.</p>
+            <button onclick="showContent('initial')">Go Back</button>
+        </div>
+
+        <!-- Login content -->
+        <div class="button-container" id="login-content">
+            <p>Hier komt de login-logout-user-profile pagina.</p>
+            <button onclick="showContent('initial')">Go Back</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SOT. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="main-script.js"></script>
+</body>
+</html>
