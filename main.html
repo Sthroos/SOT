@@ -7,6 +7,7 @@
     <title>Speel-O-Theek Nijkerk</title>
 </head>
 <body>
+    <div class="main-container">
     <header>
         <button id="topLeftButton" onclick="showContent('member-admin')">Inloggen</button>
         <div class="header-content">
@@ -20,9 +21,10 @@
                 <a href="#" id="logoutLink" onclick="performLogout()">Logout</a>
             </div>
         </div>
-        </div>
+        
     </header>
-
+</div>
+<main class="main">
     <section class="section-container">
         <div class="button-container" id="initial-content">
             <!-- Initial content with three buttons -->
@@ -43,7 +45,7 @@
             <button onclick="showContent('initial')">Go Back</button>
         </div>
     </section>
-
+</main>
     <footer>
         <p>&copy; 2024 SOT. Alle rechten voorbehouden.</p>
     </footer>

@@ -7,11 +7,16 @@
     <title>Speel-O-Theek Nijkerk</title>
 </head>
 <body>
-    <header><div class="header-content">
-        <h1>Welkom bij Speel-O-Theek Nijkerk</h1>
-        <img id="headerlogo" src="SpeelOtheekkleur.jpg" alt="Logo">
-    </div></header>
-    <div class="login-container" id="login-container">
+    <div class="main-container">
+    <header>
+            <div class="header-content">
+                <h1>Welkom bij Speel-O-Theek Nijkerk</h1>
+                <img id="headerlogo" src="SpeelOtheekkleur.jpg" alt="Logo">
+            </div>
+        </header>
+    </div>
+    <main class="main">
+        <div class="login-container" id="login-container">
         <h2>Login</h2>
         <form id="loginForm">
             <label for="username">Username:</label>
@@ -27,7 +32,10 @@
         <p>You are logged in.</p>
         <button onclick="performLogout()">Logout</button>
     </div>
-
+</main>
+<footer>
+    <p>&copy; 2024 SOT. Alle rechten voorbehouden.</p>
+</footer>
     <script src="login-script.js"></script>
 </body>
 </html>
